@@ -11,6 +11,15 @@ cases.forEach(function(case_) {
             case_.classList.add(tour);
             tour = (tour === "x") ? "o" : "x";
             message.textContent = "C'est au tour de " + tour.toUpperCase();
+            var isGrilleRemplie = true;
+            cases.forEach(function(case__) {
+              if (case__.textContent === "") {//Si une case vide est trouvée, alors 
+                isGrilleRemplie = false; // la variable "isGrilleRemplie" est définie sur "false".
+              }
+            });
+            if (isGrilleRemplie) {//Si la grille est remplie alors
+              message.textContent = "Partie terminée"; //la variable "message" est mise à jour avec le contenu "Partie terminée".
+            }
         }
     });
 });
