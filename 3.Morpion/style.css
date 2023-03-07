@@ -1,0 +1,16 @@
+.case {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    font-size: 144px;
+    line-height: 200px;
+    cursor: pointer;
+}
+.case.x {
+    color: red;
+}
+.case.o {
+    color: blue;
+}
