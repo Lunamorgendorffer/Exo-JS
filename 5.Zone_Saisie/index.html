@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zone de saisie</title>
+</head>
+<body>
+    <p>Créer une page web affichant une zone de saisie où on pourra saisir une valeur en euros afin de donner la conversion en francs</p>
+    <p>La conversion (1 euro = 6.55957 francs) se fait en temps réel (pas de bouton de soumission du formulaire). Le résultat en francs est arrondi à 2 décimales.</p>
+    <p>En cas de saisie non numérique un message affiche qu'on doit absolument saisir une valeur numérique</p> 
+
+    <h3>Convertisseur Euros - Francs</h3>
+
+    <div style="display:inline-block; text-align:center;">
+        <label for="deviseeu"><b>Euros</b></label><br>
+        <input id="deviseeu" type="number" step="0.01" name="euro" placeholder="Somme en Euros" />
+    </div>
+
+    <span>< ></span>
+
+    <div style="display:inline-block; text-align:center;">
+        <label for="devisefr"><b>Francs</b></label><br>
+        <input id="devisefr" type="number" step="0.01" name="franc" placeholder="Somme en Francs" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
